@@ -1,19 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Rocks here.
+ *  Eatable rock
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Lionson and Moses 
+ * @today
  */
 public class Rocks extends Actor
 {
-    /**
-     * Act - do whatever the Rocks wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    int speed = 1;
+    public Rocks()
+    {
+        setImage("images/rock.png");
+    }
     public void act()
     {
-        // Add your action code here.
+        setLocation(getX(), getY() +1);
+    }
+    public void setSpeed(int spd)
+    {
+        speed = spd;
     }
 }
