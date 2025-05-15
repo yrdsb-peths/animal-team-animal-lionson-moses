@@ -1,19 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleClass here.
+ * Background
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @IDK 
+ * May 16
  */
 public class TitleScreen extends World
 {
-
-    /**
-     * Constructor for objects of class TitleClass.
-     * 
-     */
-
     Label titleLabel = new Label("Hungry turtle", 150);
     /**
      * Constructor for objects of class TitleScreen.
@@ -36,11 +30,6 @@ public class TitleScreen extends World
             Greenfoot.setWorld(gameWorld);
         }
     }
-    
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
     private void prepare()
     {
         Turtle turtle = new Turtle();
