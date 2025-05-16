@@ -15,7 +15,13 @@ public class Rocks extends Actor
     }
     public void act()
     {
-        setLocation(getX(), getY() +1);
+        setLocation(getX(), getY() + speed);
+        MyWorld world = (MyWorld) getWorld();
+        if(getY() >= world.getHeight())
+        {
+            world.endGame();
+            world.removeObject(this);
+        }
     }
     public void setSpeed(int spd)
     {

@@ -29,7 +29,7 @@ public class MyWorld extends World {
     //end game(it's really doesn't work for my project be cause flower can move);
     public void endGame()
     {
-        Label gameOverLabel = new Label("I'm Hungry!" , 300);
+        Label gameOverLabel = new Label("I'm Hungry!" , 100);
         addObject(gameOverLabel, 500, 300);
     }
     public void createRock()
